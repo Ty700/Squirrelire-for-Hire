@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cm71mqhqmcgo1"]
+
+[ext_resource type="PackedScene" uid="uid://c67iye3p7vcyf" path="res://player.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://ba8uvji4qb0qu" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cokbp601okrjl" path="res://enemy.tscn" id="2_h2yge"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_h2yge")
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource("1_0xm2m")]
+position = Vector2(936, 305)
+collision_layer = 0
+collision_mask = 0
+slide_on_ceiling = false
+
+[node name="Enemy" parent="." instance=ExtResource("2_h2yge")]
+position = Vector2(289, 300)
+motion_mode = 1
