@@ -12,7 +12,6 @@ size = Vector2(32, 32)
 modulate = Color(1, 0, 0.364706, 1)
 platform_on_leave = 2
 script = ExtResource("1_7k104")
-speed = 85.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0.923413, 0.428616, 0.664622, 1)

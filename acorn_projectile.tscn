@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://de6eo82j4kj3e"]
+
+[ext_resource type="Script" uid="uid://b0rrxlvcf5vy3" path="res://acorn_projectile.gd" id="1_tfla0"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_a0nav"]
+size = Vector2(8, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a0nav"]
+size = Vector2(8, 8)
+
+[node name="AcornProjectile" type="Area2D"]
+script = ExtResource("1_tfla0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.537255, 0.317647, 0.160784, 1)
+self_modulate = Color(0.537255, 0.317647, 0.160784, 1)
+texture = SubResource("PlaceholderTexture2D_a0nav")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_a0nav")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c67iye3p7vcyf"]
 
-[ext_resource type="Script" uid="uid://cqsju4jlbco2m" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://7goh2tbgryep" path="res://squire_player.gd" id="1_4flbx"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sh265"]
 size = Vector2(32, 32)
@@ -8,7 +8,7 @@ size = Vector2(32, 32)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
 size = Vector2(32, 32)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 modulate = Color(0, 1, 1, 1)
 script = ExtResource("1_4flbx")
 

@@ -2,7 +2,7 @@ extends Node2D
 
 var enemy_scene = preload("res://enemy.tscn")
 var spawn_cooldown = 5.0
-var spawn_count = 20
+var spawn_count = 10
 
 func _ready():
 	spawn_enemies()

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt7b8qdyapos5"]
+
+[ext_resource type="Script" uid="uid://co7riem5xbvt" path="res://acorn_gun.gd" id="1_8h5t4"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_b8aum"]
+size = Vector2(10, 10)
+
+[node name="AcornGun" type="Node2D"]
+script = ExtResource("1_8h5t4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.165656, 0.165656, 0.165656, 1)
+texture = SubResource("PlaceholderTexture2D_b8aum")
+
+[node name="MuzzlePoint" type="Node2D" parent="."]
+position = Vector2(0, -5)
