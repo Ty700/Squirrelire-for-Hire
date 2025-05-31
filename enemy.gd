@@ -41,7 +41,6 @@ func handle_damage_countdown(delta: float):
 		enemy_options["dmg_cooldown"] -= delta
 	
 func take_damage(damage_to_take: float) -> void:
-	#print("Enemy took damage: ")
 	enemy_options["hp"] -= damage_to_take
 	
 	if(enemy_options["hp"] <= 0.0):

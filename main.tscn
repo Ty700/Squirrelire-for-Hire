@@ -12,4 +12,6 @@ position = Vector2(580, 314)
 
 [node name="Enemy" parent="." instance=ExtResource("2_h2yge")]
 position = Vector2(35, 36)
+collision_layer = 0
 motion_mode = 1
+platform_floor_layers = 4294967040

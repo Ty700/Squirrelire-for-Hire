@@ -30,10 +30,10 @@ func check_cleanup():
 		queue_free()
 
 func _on_body_entered(body):
-	if body.has_method("take_damage"):
-		body.take_damage(projectile_stats["damage"])
-		on_hit(body)
-
-func on_hit(body):
-	# Override in subclasses for special effects
-	queue_free()
+	if body.is_in_group("player"):
+		return 
+	else:
+		if body.has_method("take_damage"):
+			body.take_damage(projectile_stats["damage"])
+			queue_free()
+	
